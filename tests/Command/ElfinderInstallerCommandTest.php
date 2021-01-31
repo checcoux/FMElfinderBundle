@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Command;
+namespace FM\ElfinderBundle\Tests\Command;
 
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
