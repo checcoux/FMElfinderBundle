@@ -378,6 +378,7 @@ class Configuration implements ConfigurationInterface
                             ->scalarNode('bucket_name')->defaultvalue('')->end()
                             ->scalarNode('optional_prefix')->defaultvalue('')->end()
                             ->scalarNode('base_url')->defaultvalue('')->end()
+                            ->scalarNode('ACL')->defaultvalue('')->end()
                     ->end()
                 ->end()
 

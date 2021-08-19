@@ -227,8 +227,15 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
                 if (isset($opt['aws_s3_v2']['base_url']) && $opt['aws_s3_v2']['base_url']) {
                     $options['base_url'] = $opt['aws_s3_v2']['base_url'];
                 }
+
+                if (isset($opt['aws_s3_v2']['ACL']) && $opt['aws_s3_v2']['ACL'] == 'public-read') {
+                    $acl = ['ACL' => 'public-read'];
+                } else {
+                    $acl = [];
+                }
+                //$acl = ['ACL' => 'public-read'];
                 $client     = S3Client::factory($options);
-                $filesystem = new Filesystem(new AwsS3v2($client, $opt['aws_s3_v2']['bucket_name'], $opt['aws_s3_v2']['optional_prefix']));
+                $filesystem = new Filesystem(new AwsS3v2($client, $opt['aws_s3_v2']['bucket_name'], $opt['aws_s3_v2']['optional_prefix'], $acl));
 
                 break;
             case 'aws_s3_v3':

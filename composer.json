@@ -1,12 +1,16 @@
 {
-    "name": "helios-ag/fm-elfinder-bundle",
-    "description": "ElFinder bundle, adds ElFinder file manager to your Symfony project",
+    "name": "checcoux/fm-elfinder-bundle",
+    "description": "Fork of the original fm-elfinder-bundle, with the inclusion of acl rules for the aws s3 connector",
     "keywords": ["elfinder", "file manager", "wysiwyg"],
     "type": "symfony-bundle",
     "homepage": "https://github.com/helios-ag/FMElfinderBundle",
     "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Francesco Cucchiaro",
+            "email": "hello@checco.dev"
+        },
         {
             "name": "Al Ganiev",
             "email": "helios.ag@gmail.com"
