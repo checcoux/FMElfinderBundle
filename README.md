@@ -1,6 +1,11 @@
 FMElfinderBundle
 ================
 
+### Fork of the original fm-elfinder-bundle, with the inclusion of acl rules for the aws s3 connector ###
+
+FMElfinderBundle
+================
+
 [ElFinder](https://github.com/Studio-42/elFinder) integration in Symfony
 
 ### Code Quality Assurance ###
